@@ -1,0 +1,49 @@
+<>
+============================Halo ngab!==============================
+
+-----------Pendahuluan------------
+#Perkenalkan saya Bayu Pamungkas, kelas XII Rekayasa Perangkat Lunak I
+#dari SMK Negeri 1 Kepanjen.
+#Sbelumnya saya meminta maaf, karena pada project ini
+#Belum sepenuhnya sesuai dengan sistem actualnya,
+#Dan juga pada project ini juga memiliki kekurangan pada Securitynya
+#Dan juga Logika Sistem masih belum sempurna 
+
+-------------Apa Ini--------------
+#Ini merupakan sebuah project Sistem Pembayaran SPP Berbasis Webiste
+#dengan menggunakan Bahasa Pemrogaman Full Native :
+#PHP + MySQL => dengan menggunakan sturuktur Object Oriented Programing
+#Dengan mempercantik tampilan menggunakan :
+#Sedikit CSS
+#Dan juga sedikit Javascript (Belum sepenuhnya menguasai).
+
+--------Pengenalan Project--------
+#Pada prject ini merupakan project yang saya buat sebagai 
+#Modul UKK Jurusan Rekayasa Perangkat Lunak di SMKN 1 Kepanjen
+#Pada project ini memiliki 3 User Role yang dimana
+#Masing - masing Role memiliki keistimewaan yang berbeda
+#Untuk role yang pertama Admin => dapat mengontrol seluruh sistem yang ada
+#Pada website, kemudian Petugas => petugas dapat mengontrol "Pembayaran, Pencarian Data Siswa, Histori"
+#Dan yang terakhir Siswa => siswa hanya dapat menggunakan sistem untuk melihat "Histori".
+#Kemudian Sistem yang ada pada project :
+#Manajemen Petugas
+#Manajemen Kelas
+#Manajemen SPP
+#Manajemen Siswa
+#Proses Pembayaran
+#Histori Pembayaran
+
+#Konfigurasi :
+#Masuk pada folder "public/function"
+#Ubah pada file "config.php" kemudian ganti database sesuai nama database anda,
+#Selanjutnya ubah "url" sesuai Path anda, setelah "localhost" hingga "public" 
+#dengan path pertama diwali dengan "/" Ex. "/projek1/saya/public/"
+#Setelah pada file "config.php"
+#Ubah juga "file custom.js.js", pada folder "assets",
+#Cari funtion AJAX dan ubah "url"-nya sesuai Url pada browser anda
+#Ex. "localhost/projek1/saya/public/" + "ubah sesuai kebutuhan"
+
+--------Sekian sedikit penjelasan mengenai project ini Terimakasih--------
+
+========================= SALAM CODING && CODER ===========================
+</>
