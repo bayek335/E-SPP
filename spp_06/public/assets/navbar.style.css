@@ -1,0 +1,139 @@
+.navbar {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 2px #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 3;
+}
+.navSpan {
+  display: flex;
+  justify-content: left;
+  padding: 15px 25px;
+}
+.navProfil {
+  background-color: #f4f4f4;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+.navSpan #tbl-toggle {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 15px;
+  height: 28px;
+}
+#tbl-toggle span {
+  background-color: #0f5fa3;
+  height: 5px;
+  width: 30px;
+  border-radius: 2px;
+  transform-origin: left;
+  transition: all ease 300ms;
+}
+#tbl-toggle span:first-child.span-slide {
+  transform: rotate(40deg);
+}
+#tbl-toggle span:nth-child(2).span-slide {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+#tbl-toggle span:last-child.span-slide {
+  transform: rotate(-40deg);
+}
+
+.sidebar {
+  background-color: white;
+  z-index: 2;
+  width: 250px;
+  box-shadow: 1px 1px 2px #d3d3d3;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transform: translateX(-300px);
+
+  transition: all ease-in-out 500ms;
+}
+.sidebar-span {
+  text-align: center;
+  font-size: 26px;
+  padding: 75px 25px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  background-color: #f9f9f9;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li a {
+  color: rgba(0, 0, 0, 0.645);
+}
+.sidebar ul li.menu a {
+  display: block;
+  list-style: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 3px;
+  border: none;
+}
+.sidebar ul li.tbl-keluar {
+  text-align: center;
+  margin: 25px;
+}
+.sidebar ul .menu a.active {
+  border-left: 4px solid #0f5fa3;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #f9f9f9;
+}
+.sidebar ul li a:hover {
+  background-color: #f9f9f9;
+}
+.sidebar ul ul.smenu li a {
+  padding: 5px;
+  font-size: 14px;
+  padding-left: 55px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.sidebar ul li.menu a i {
+  width: 30px;
+}
+.sidebar ul li.menu a i.fa.fa-chevron-right {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(50%);
+  font-size: 12px;
+  text-align: center;
+  transform-origin: bottom;
+
+  transition: all ease 300ms;
+}
+.sidebar ul li.menu a i.fa.fa-chevron-right.active {
+  rotate: 90deg;
+}
+.sidebar ul ul.smenu {
+  height: 0;
+  overflow: hidden;
+  transition: all ease 300ms;
+}
+.sidebar ul ul.smenu.active {
+  height: 70px;
+}
+.background-dark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all ease 1s;
+}
+.background-dark-active {
+  opacity: 0.3;
+  visibility: visible;
+}
